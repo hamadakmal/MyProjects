@@ -1,0 +1,25 @@
+body{margin:0px; direction:ltr;}
+
+@font-face{font-family:"links"; src:url("links.ttf");}
+@font-face{font-family:"texts"; src:url("texts.ttf");}
+header{width:100%; position:fixed;}
+div{width:100%; color:#333; font-family:"texts"; margin-top:5%;}
+p{font-family:"texts"; font-size:10pt;}
+nav{background-color:black; width:100%; padding:1%;}
+a{font-family:"links"; color:white; margin:2%; text-decoration:none; font-size:10pt;}
+a:hover{border-bottom:2px white solid;}
+#information{width:100%; margin-top:5%;}
+#information table{width:100%;}
+#information table img{width:100%; border-radius:20px;}
+#services{background-color:#fff; padding-top:2%; font-family:"texts";}
+#services ul{list-style-type:none;}
+#services ul li{display:inline; color:white; background-color:#000; padding:5px; margin:1%; font-size:6pt;}
+
+#gallery{background-color:#fff; margin-top:0px; padding-top:2%; font-family:"texts";
+height:75%; overflow:scroll;
+}
+#gallery figure{width:400%; height:100%; float:left;}
+#gallery figure img{width:20%; border-radius:20px;}
+#contact{background-color:black;}
+#field{width:75%; border:none; background-color:white; color:#333; font-family:"texts"; margin-bottom:2%;}
+#send{width:75%; margin-bottom:5%; color:white; background-color:rgb(0,200,0); font-family:"texts"; padding:5px; border:none;}
