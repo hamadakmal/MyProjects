@@ -1,25 +1,27 @@
-body{margin:0px; direction:ltr;}
-
-@font-face{font-family:"links"; src:url("links.ttf");}
+html{scroll-behavior:smooth;}
+body{background-color:#eee; margin:0px; direction:ltr;}
+@font-face{font-family:"title"; src:url("title.ttf");}
 @font-face{font-family:"texts"; src:url("texts.ttf");}
-header{width:100%; position:fixed;}
-div{width:100%; color:#333; font-family:"texts"; margin-top:5%;}
-p{font-family:"texts"; font-size:10pt;}
-nav{background-color:black; width:100%; padding:1%;}
-a{font-family:"links"; color:white; margin:2%; text-decoration:none; font-size:10pt;}
-a:hover{border-bottom:2px white solid;}
-#information{width:100%; margin-top:5%;}
-#information table{width:100%;}
-#information table img{width:100%; border-radius:20px;}
-#services{background-color:#fff; padding-top:2%; font-family:"texts";}
-#services ul{list-style-type:none;}
-#services ul li{display:inline; color:white; background-color:#000; padding:5px; margin:1%; font-size:6pt;}
+@font-face{font-family:"links"; src:url("links.ttf");}
 
-#gallery{background-color:#fff; margin-top:0px; padding-top:2%; font-family:"texts";
-height:75%; overflow:scroll;
+*{box-sizing:border-box; border-radius:5px; font-family:"texts"; font-size:18pt;}
+a{text-decoration:none; color:white; padding:1%; font-size:16pt; font-family:"links";}
+div{display:inline-block; width:90%; text-align:center; margin:2%;}
+ul{list-style-type:none;}
+ul li{display:inline-block; margin:1%; font-size:14pt; background-color:#111; color:white; padding:5px;}
+ul li a{border-radius:5px 0px; padding:5px; background-color:#111; font-size:12pt;}
+img{width:350px; transition:width 0.5s; display:inline-block; margin:2%; border-radius:10px;}
+p{text-align:left;}
+img:hover{width:370px;}
+input[type="text"] {width:250px; display:inline-block; border:none; text-align:left; margin:2%;}
+input[type="submit"] {width:250px; border:none; color:white; font-family:"links"; background-color:#3f3;}
+@media screen and (max-width:600px){
+a{font-size:10pt;}	
+*{font-size:12pt;}
+ul li a{font-size:8pt;}
+img{width:150px;}
+img:hover{width:170px;}
 }
-#gallery figure{width:400%; height:100%; float:left;}
-#gallery figure img{width:20%; border-radius:20px;}
-#contact{background-color:black;}
-#field{width:75%; border:none; background-color:white; color:#333; font-family:"texts"; margin-bottom:2%;}
-#send{width:75%; margin-bottom:5%; color:white; background-color:rgb(0,200,0); font-family:"texts"; padding:5px; border:none;}
+nav{background-color:#111; border-radius:0px; font-family:"title"; padding:2%; color:white; position:sticky;}
+#gallery img{width:30%;}
+#gallery img:hover{width:35%;}
